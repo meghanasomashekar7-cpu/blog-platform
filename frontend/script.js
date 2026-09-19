@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://blog-platform-backend-ed1i.onrender.com/api";
 
 // Load all blog posts
 async function loadPosts() {
