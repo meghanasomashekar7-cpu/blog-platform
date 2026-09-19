@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edit Post | My Blog</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>My Blog</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="create-post.html">Create Post</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <form id="editPostForm">
+
+            <h2>Edit Blog Post</h2>
+
+            <label>Title</label>
+
+            <input
+                type="text"
+                id="editTitle"
+                placeholder="Enter post title"
+                required
+            >
+
+            <label>Content</label>
+
+            <textarea
+                id="editContent"
+                placeholder="Write your blog post..."
+                required
+            ></textarea>
+
+            <button type="submit">
+                Update Post
+            </button>
+
+            <p id="editMessage"></p>
+
+        </form>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

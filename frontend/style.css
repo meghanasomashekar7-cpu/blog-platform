@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f4efe6;
+    color: #171717;
+    min-height: 100vh;
+}
+
+/* HEADER */
+
+header {
+    background: #f4efe6;
+    border-bottom: 2px solid #171717;
+    padding: 28px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: #171717;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    color: #b45309;
+}
+
+/* MAIN */
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 30px;
+}
+
+main h2 {
+    font-size: 58px;
+    line-height: 1;
+    text-align: left;
+    margin-bottom: 55px;
+    max-width: 700px;
+    letter-spacing: -2px;
+}
+
+/* POST */
+
+.post-card {
+    background: #fffdf8;
+    border-top: 1px solid #171717;
+    border-bottom: 1px solid #171717;
+    padding: 35px 10px;
+    margin-bottom: 35px;
+    transition: 0.25s;
+}
+
+.post-card:hover {
+    padding-left: 25px;
+    border-left: 5px solid #b45309;
+}
+
+.post-card h3 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+}
+
+.post-card p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #44403c;
+    max-width: 800px;
+    margin-bottom: 18px;
+}
+
+.post-card small {
+    font-family: Arial, sans-serif;
+    color: #78716c;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* BUTTON */
+
+button {
+    margin-top: 20px;
+    background: #171717;
+    color: white;
+    border: none;
+    padding: 13px 24px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #b45309;
+}
+
+/* FORMS */
+
+form {
+    max-width: 650px;
+    margin: 30px auto;
+    background: #fffdf8;
+    padding: 45px;
+    border: 1px solid #171717;
+}
+
+form h2 {
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px 5px;
+    margin: 8px 0 25px;
+    border: none;
+    border-bottom: 1px solid #777;
+    background: transparent;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-bottom: 2px solid #b45309;
+}
+
+textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main {
+        padding: 45px 20px;
+    }
+
+    main h2 {
+        font-size: 42px;
+    }
+
+    .post-card h3 {
+        font-size: 27px;
+    }
+}

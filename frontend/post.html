@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blog Post | My Blog</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>My Blog</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="create-post.html">Create Post</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Blog Post -->
+        <article id="postContainer">
+    <p>Loading post...</p>
+</article>
+
+<div id="postActions"></div>
+
+
+        <!-- Comments -->
+        <section id="commentsSection">
+
+            <h2>Comments</h2>
+
+            <div id="commentsContainer">
+                <p>Loading comments...</p>
+            </div>
+
+        </section>
+
+
+        <!-- Add Comment -->
+        <section id="addCommentSection">
+
+            <h2>Leave a Comment</h2>
+
+            <form id="commentForm">
+
+                <textarea
+                    id="commentContent"
+                    placeholder="Write your comment..."
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Add Comment
+                </button>
+
+                <p id="commentMessage"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
